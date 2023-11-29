@@ -1,15 +1,16 @@
 interface Icard {
     id:number,
-    paragrafo:string
+    paragrafo:string,
+    details:string
 }
 
-export const Card = ({id , paragrafo}:Icard,) =>{
-    console.log(paragrafo)
+export const Card = ({id , paragrafo,details}:Icard,) =>{
+  
     return(
         <div>
             <h1>Card{id}</h1>
             <p>{paragrafo}</p>
-            <p>detail about</p>
+            <p>{details}</p>
         </div>
     )
 }
